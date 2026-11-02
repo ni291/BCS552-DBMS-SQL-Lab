@@ -1,0 +1,33 @@
+Name: Nitin Kumar | Roll No: 2410303313 | Student ID: BCS2024364 | Assignment 9
+Assignment 9: Aliases and CASE
+(Output of assignment9.sql)
+
+=== Task 1: Show the name and marks. Name the columns student_name and score, using AS.
+
+SQL> SELECT name AS student_name, marks AS score FROM exam_result;
+student_name  score
+------------  -----
+Asha             92
+Rohan            47
+Neha             68
+Meera            33
+
+=== Task 2: Show the name and a column named result: Pass if the marks are 40 or more, otherwise Fail. Use CASE.
+
+SQL> SELECT name, CASE WHEN marks >= 40 THEN 'Pass' ELSE 'Fail' END AS result FROM exam_result;
+name   result
+-----  ------
+Asha   Pass
+Rohan  Pass
+Neha   Pass
+Meera  Fail
+
+=== Task 3: Show the name, and the marks with 5 bonus marks added. Name this column with_bonus.
+
+SQL> SELECT name, marks + 5 AS with_bonus FROM exam_result;
+name   with_bonus
+-----  ----------
+Asha           97
+Rohan          52
+Neha           73
+Meera          38

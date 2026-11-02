@@ -1,0 +1,25 @@
+Name: Nitin Kumar | Roll No: 2410303313 | Student ID: BCS2024364 | Assignment 5
+Assignment 5: Pattern Matching with LIKE
+(Output of assignment5.sql)
+
+=== Task 1: Show the titles that start with Data. Use LIKE with the pattern 'Data%'.
+
+SQL> SELECT title FROM book WHERE title LIKE 'Data%';
+title
+--------------------
+Database Systems
+Data Structures in C
+
+=== Task 2: Show the titles that end with the letter C. Use LIKE with the pattern '%C'.
+
+SQL> SELECT title FROM book WHERE title LIKE '%C';
+title
+--------------------
+Data Structures in C
+
+=== Task 3: Show the titles whose second letter is h. Use LIKE with the pattern '_h%'.
+
+SQL> SELECT title FROM book WHERE title LIKE '_h%';
+title
+-------------
+Short Stories

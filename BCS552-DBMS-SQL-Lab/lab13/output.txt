@@ -1,0 +1,33 @@
+Name: Nitin Kumar | Roll No: 2410303313 | Student ID: BCS2024364 | Assignment 13
+Assignment 13: UNION and INTERSECT
+(Output of assignment13.sql)
+
+=== Task 1: Show all the names from club_a and club_b with each name once, sorted by name. Use UNION.
+
+SQL> SELECT student_name FROM club_a UNION SELECT student_name FROM club_b ORDER BY student_name;
+student_name
+------------
+Asha
+Meera
+Neha
+Pooja
+Rohan
+
+=== Task 2: Show the names that are in both clubs, sorted by name. Use INTERSECT.
+
+SQL> SELECT student_name FROM club_a INTERSECT SELECT student_name FROM club_b ORDER BY student_name;
+student_name
+------------
+Neha
+
+=== Task 3: Show all the names from both clubs, including repeated names, sorted by name. Use UNION ALL.
+
+SQL> SELECT student_name FROM club_a UNION ALL SELECT student_name FROM club_b ORDER BY student_name;
+student_name
+------------
+Asha
+Meera
+Neha
+Neha
+Pooja
+Rohan

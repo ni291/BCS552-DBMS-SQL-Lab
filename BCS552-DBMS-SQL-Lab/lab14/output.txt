@@ -1,0 +1,24 @@
+Name: Nitin Kumar | Roll No: 2410303313 | Student ID: BCS2024364 | Assignment 14
+Assignment 14: Creating and Using a View
+(Output of assignment14.sql)
+
+=== Task 1: Create a view named high_scores that shows the name and marks of the rows with marks 70 or more.
+
+SQL> CREATE VIEW high_scores AS SELECT name, marks FROM score WHERE marks >= 70;
+(statement executed successfully, no rows to show)
+
+=== Task 2: Show all the rows of the view high_scores.
+
+SQL> SELECT * FROM high_scores;
+name  marks
+----  -----
+Asha     78
+Neha     88
+
+=== Task 3: Show only the names in the view high_scores, sorted by name.
+
+SQL> SELECT name FROM high_scores ORDER BY name;
+name
+----
+Asha
+Neha

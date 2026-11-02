@@ -1,0 +1,22 @@
+Name: Nitin Kumar | Roll No: 2410303313 | Student ID: BCS2024364 | Assignment 1
+Assignment 1: Creating a Table and Adding Rows
+(Output of assignment1.sql)
+
+=== Task 1: Create a table named student with roll_no (INT), name (VARCHAR(30)) and marks (INT).
+
+SQL> CREATE TABLE student (roll_no INT, name VARCHAR(30), marks INT);
+(statement executed successfully, no rows to show)
+
+=== Task 2: Add three rows with one INSERT statement: 101 Asha 78; 102 Rohan 64; 103 Neha 88.
+
+SQL> INSERT INTO student (roll_no, name, marks) VALUES (101, 'Asha', 78), (102, 'Rohan', 64), (103, 'Neha', 88);
+(statement executed successfully, no rows to show)
+
+=== Task 3: Show all the columns and all the rows of the student table.
+
+SQL> SELECT * FROM student;
+roll_no  name   marks
+-------  -----  -----
+    101  Asha      78
+    102  Rohan     64
+    103  Neha      88

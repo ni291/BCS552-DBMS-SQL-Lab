@@ -1,0 +1,38 @@
+Name: Nitin Kumar | Roll No: 2410303313 | Student ID: BCS2024364 | Assignment 2
+Assignment 2: Updating and Deleting Rows
+(Output of assignment2.sql)
+
+=== Task 1: Change the quantity of item_code 1 to 80.
+
+SQL> UPDATE stock SET quantity = 80 WHERE item_code = 1;
+(statement executed successfully, no rows to show)
+
+SQL> SELECT * FROM stock;
+item_code  item_name  quantity
+---------  ---------  --------
+        1  Notebook         80
+        2  Pen             120
+        3  Bag               0
+
+=== Task 2: Add 10 to the quantity of item_code 2.
+
+SQL> UPDATE stock SET quantity = quantity + 10 WHERE item_code = 2;
+(statement executed successfully, no rows to show)
+
+SQL> SELECT * FROM stock;
+item_code  item_name  quantity
+---------  ---------  --------
+        1  Notebook         80
+        2  Pen             130
+        3  Bag               0
+
+=== Task 3: Delete the row of item_code 3 from the stock table.
+
+SQL> DELETE FROM stock WHERE item_code = 3;
+(statement executed successfully, no rows to show)
+
+SQL> SELECT * FROM stock;
+item_code  item_name  quantity
+---------  ---------  --------
+        1  Notebook         80
+        2  Pen             130

@@ -1,0 +1,24 @@
+Name: Nitin Kumar | Roll No: 2410303313 | Student ID: BCS2024364 | Assignment 7
+Assignment 7: Using Aggregate Functions
+(Output of assignment7.sql)
+
+=== Task 1: Show how many sales rows there are. Name the column num_sales.
+
+SQL> SELECT COUNT(*) AS num_sales FROM sales;
+num_sales
+---------
+        4
+
+=== Task 2: Show the total of all the amounts. Name the column total.
+
+SQL> SELECT SUM(amount) AS total FROM sales;
+total
+-----
+41000
+
+=== Task 3: Show the highest amount. Name the column highest.
+
+SQL> SELECT MAX(amount) AS highest FROM sales;
+highest
+-------
+  12000

@@ -1,0 +1,26 @@
+Name: Nitin Kumar | Roll No: 2410303313 | Student ID: BCS2024364 | Assignment 12
+Assignment 12: Using a Subquery
+(Output of assignment12.sql)
+
+=== Task 1: Show the names in club_a that are also in club_b. Use a subquery after IN.
+
+SQL> SELECT student_name FROM club_a WHERE student_name IN (SELECT student_name FROM club_b);
+student_name
+------------
+Neha
+
+=== Task 2: Show how many names are in club_b. Name the column members.
+
+SQL> SELECT COUNT(*) AS members FROM club_b;
+members
+-------
+      3
+
+=== Task 3: Show the names in club_a, sorted by name.
+
+SQL> SELECT student_name FROM club_a ORDER BY student_name;
+student_name
+------------
+Asha
+Neha
+Rohan

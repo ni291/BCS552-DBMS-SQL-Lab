@@ -1,0 +1,26 @@
+Name: Nitin Kumar | Roll No: 2410303313 | Student ID: BCS2024364 | Assignment 4
+Assignment 4: Combining Conditions
+(Output of assignment4.sql)
+
+=== Task 1: Show the name and runs of the players from Eagles who scored more than 35 runs. Use AND.
+
+SQL> SELECT name, runs FROM player WHERE team = 'Eagles' AND runs > 35;
+name  runs
+----  ----
+Asha    45
+
+=== Task 2: Show the name and runs of the players whose runs are between 40 and 80. Use BETWEEN.
+
+SQL> SELECT name, runs FROM player WHERE runs BETWEEN 40 AND 80;
+name   runs
+-----  ----
+Asha     45
+Meera    72
+
+=== Task 3: Show the name and team of the players who play for Tigers or Lions. Use IN.
+
+SQL> SELECT name, team FROM player WHERE team IN ('Tigers', 'Lions');
+name   team
+-----  ------
+Meera  Tigers
+Kiran  Lions

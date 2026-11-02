@@ -1,0 +1,31 @@
+Name: Nitin Kumar | Roll No: 2410303313 | Student ID: BCS2024364 | Assignment 10
+Assignment 10: Joining Two Tables with INNER JOIN
+(Output of assignment10.sql)
+
+=== Task 1: Show each employee name with the name of their department. Use INNER JOIN on dept_id and sort by employee name.
+
+SQL> SELECT employee.emp_name, department.dept_name FROM employee INNER JOIN department ON employee.dept_id = department.dept_id ORDER BY employee.emp_name;
+emp_name  dept_name
+--------  ---------
+Anita     Accounts
+Deepak    Accounts
+Lata      Sales
+Pooja     Sales
+
+=== Task 2: Show the names of the employees in the Sales department. Use INNER JOIN and WHERE, and sort by employee name.
+
+SQL> SELECT employee.emp_name FROM employee INNER JOIN department ON employee.dept_id = department.dept_id WHERE department.dept_name = 'Sales' ORDER BY employee.emp_name;
+emp_name
+--------
+Lata
+Pooja
+
+=== Task 3: Show the employee name, the department name and the salary, sorted by salary from highest to lowest.
+
+SQL> SELECT employee.emp_name, department.dept_name, employee.salary FROM employee INNER JOIN department ON employee.dept_id = department.dept_id ORDER BY employee.salary DESC;
+emp_name  dept_name  salary
+--------  ---------  ------
+Anita     Accounts    90000
+Deepak    Accounts    60000
+Lata      Sales       55000
+Pooja     Sales       42000

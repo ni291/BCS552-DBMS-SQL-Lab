@@ -1,0 +1,29 @@
+Name: Nitin Kumar | Roll No: 2410303313 | Student ID: BCS2024364 | Assignment 3
+Assignment 3: Selecting Columns and Rows with WHERE
+(Output of assignment3.sql)
+
+=== Task 1: Show only the name and marks of all the students.
+
+SQL> SELECT name, marks FROM student;
+name    marks
+------  -----
+Asha       78
+Rohan      64
+Neha       88
+Deepak     52
+
+=== Task 2: Show all the columns of the students whose marks are greater than 60.
+
+SQL> SELECT * FROM student WHERE marks > 60;
+roll_no  name   marks
+-------  -----  -----
+    101  Asha      78
+    102  Rohan     64
+    103  Neha      88
+
+=== Task 3: Show the name of the student whose roll_no is 103.
+
+SQL> SELECT name FROM student WHERE roll_no = 103;
+name
+----
+Neha

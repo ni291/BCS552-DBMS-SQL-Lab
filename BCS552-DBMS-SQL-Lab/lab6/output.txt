@@ -1,0 +1,30 @@
+Name: Nitin Kumar | Roll No: 2410303313 | Student ID: BCS2024364 | Assignment 6
+Assignment 6: Sorting Rows and Removing Repeats
+(Output of assignment6.sql)
+
+=== Task 1: Show the product name and price of all products, sorted by price from highest to lowest.
+
+SQL> SELECT product_name, price FROM product ORDER BY price DESC;
+product_name  price
+------------  -----
+Calculator      850
+Bag             500
+Notebook         60
+Pen              15
+
+=== Task 2: Show each category once, sorted by category name.
+
+SQL> SELECT DISTINCT category FROM product ORDER BY category;
+category
+-----------
+Electronics
+Office
+Stationery
+
+=== Task 3: Show the product name and price of the two most expensive products, sorted by price from highest to lowest.
+
+SQL> SELECT product_name, price FROM product ORDER BY price DESC LIMIT 2;
+product_name  price
+------------  -----
+Calculator      850
+Bag             500
